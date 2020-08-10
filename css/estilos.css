@@ -1,0 +1,293 @@
+/* General */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+
+.contenedor{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 60px;
+}
+
+.contenedor-nav{
+    padding: 0;
+    text-align: right;
+}
+
+.contenedor-nav a {
+    text-decoration: none;
+    display: inline-block;
+    color: #140329;
+    margin-left: 10px;
+    margin-top: 40px; 
+}
+
+.contenedor-textos {
+    padding-bottom: 100px;
+}
+
+.header {
+    width: 100%;
+    background-image: linear-gradient(-225deg, hsla(224, 100%, 83%, 0.466) 0%, hsla(308, 28%, 42%, 0.479) 100%), url("../img/womencoding2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.presentacion{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #140329;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+.presentacion h1 {
+    font-size: 50px;
+}
+
+.copy{
+    font-size: 24px;
+    padding: 20px 0;
+    font-weight: 300;
+}
+.presentacion .copy {
+    color: #e3ed89;
+    background-color: #cdaf45;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Main */
+
+.seccion1{
+    padding-top: 0px;
+    background-color: #140329;
+}
+
+.seccion1 .contenedor {
+    padding-top: 25px;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #e3ed89;
+    background-color: #cdaf45;
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+
+.contenedor-me-presento {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-presentacion {
+    width: 50%;
+}
+
+.relatos {
+    color: #e3ed89;
+    width: 40%;
+}
+
+.relato {
+    margin-bottom: 30px;
+}
+.n-relato {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+/* Videos */
+
+.contenedor-videos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-video {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.titulo-video{
+    color: #cdaf45;
+    margin-bottom: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.fa-youtube{
+    font-size: 160px;
+    
+}
+
+.youtube{
+    text-align: center;
+    color: red;
+    margin-top: 30px;
+}
+
+/* curso */
+
+.curso {
+    background-color: #140329;
+}
+
+.curso .titulo-seccion{
+    margin-bottom: 30px;
+}
+
+.info-curso{
+    display: flex;
+    height: 800px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.detalle-curso{
+    width: 40%;
+    text-align: center;
+    background-color: #cdaf45;
+    height: auto;
+    border-radius: 10px;
+    padding: 50px 10px;
+    overflow: hidden;
+    color: #140329;
+}
+
+.active{
+    background-color: #e3ed89;
+}
+
+.titulo-detalle{
+    font-size: 40px;
+}
+
+.precio{
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.beneficio{
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted #140329;
+}
+
+.cta{
+    background-color: #ffffff;
+    color: #140329;
+    display: inline-block;
+    margin-top: 30px;
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+/* footer */
+
+footer{
+   text-align: center;
+}
+
+footer .contenedor {
+    padding: 15px;
+}
+
+footer .titulo-seccion{
+    margin-bottom: 30px;
+}
+
+.redes-sociales{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+footer .contenedor .copy {
+    color: #cdaf45;
+    margin-bottom: 20px;
+}
+
+.fa-youtube {
+    font-size: 100px;
+    color: red;
+}
+
+.fa-instagram{
+    font-size: 100px;
+    color: violet;
+}
+
+.fa-envelope{
+    font-size: 100px;
+}
+
+/* Media querys */
+
+@media screen and (max-width: 750px){
+    .contenedor-nav {
+        text-align: center;}
+    .presentacion h1 {
+            font-size: 40px;
+        }
+    .titulo-seccion {
+        font-size: 28px;
+    }
+    .relatos{
+        width: 80%;
+    }
+    .img-presentacion {
+        width: 100%;
+        margin-bottom: 40px;
+
+    }
+
+    .info-curso{
+        height: auto;
+    }
+    .detalle-curso {
+        width: 100%;
+        height: auto;
+        margin-bottom: 80px;
+    }
+
+    .fa{
+        width:100%;
+    }
+
+}
